@@ -85,14 +85,12 @@ img {
     position: absolute;
     bottom: 0px;
     left: 30px;
-}
-
-.btns {
     cursor: pointer;
     border: none;
     display: flex;
     gap: 0;
 }
+
 
 button {
     color: var(--Grayish-Blue);
@@ -139,6 +137,7 @@ footer a {
     color: red;
 }
 
+
 @media(max-width:1150px) {
     .container {
         background: url('./images/pattern-bg.svg') no-repeat center right/contain, url('./images/pattern-quotes.svg') 180px 50px no-repeat;
@@ -146,8 +145,63 @@ footer a {
         height: auto;
     }
 
+}
+
+@media(min-width:882px) {
+
     footer {
         position: absolute;
         bottom: 10px;
     }
+}
+
+@media(max-width:881px) {
+
+    body {
+        background: url('./images/pattern-curve.svg') left bottom / 120% no-repeat;
+        margin-block: 1.5rem;
+    }
+
+    .slide {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info p {
+        font-size: 20px;
+    }
+
+    .info_footer {
+        font-size: 16px;
+        margin-bottom: 2rem;
+    }
+
+    .container {
+        background: url('./images/pattern-bg.svg') no-repeat top center/contain, url('./images/pattern-quotes.svg') 50% 70% no-repeat;
+        background-size: 450px auto, 70px, auto;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .btns {
+        position: absolute;
+        bottom: 7px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    button {
+        padding: 1rem 1.3rem;
+    }
+
 }
