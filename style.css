@@ -20,5 +20,41 @@ body {
     justify-content: center;
     min-height: 100vh;
     width: 100vw;
-    background: url('./images/pattern-curve.svg') left bottom -2rem / 70% no-repeat;
+    background: url('./images/pattern-curve.svg') left bottom -4rem / 60% no-repeat;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container {
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    background: url('./images/pattern-bg.svg') no-repeat center right/contain, url('./images/pattern-quotes.svg') 180px 150px no-repeat;
+    padding-inline: 5rem;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    width: 60%;
+}
+
+.info p {
+    font-size: clamp(1rem, 4vw, 2rem);
+    letter-spacing: -0.01em;
+    line-height: 1.4;
+    font-weight: 300;
+    margin-block: 40px;
+}
+
+.img {
+    width: 50%;
+    position: relative;
 }
