@@ -156,7 +156,6 @@ footer a {
 }
 
 @media(max-width:881px) {
-
     body {
         background: url('./images/pattern-curve.svg') left bottom / 120% no-repeat;
         margin-block: 1.5rem;
@@ -204,4 +203,25 @@ footer a {
         padding: 1rem 1.3rem;
     }
 
+}
+
+@media(max-width: 460px) {
+    body {
+        margin-inline: 0;
+    }
+
+    .slide {
+        max-width: 280px;
+    }
+
+    .container {
+        background: url('./images/pattern-bg.svg') no-repeat top center/contain, url('./images/pattern-quotes.svg') 50% 55% no-repeat;
+        background-size: 340px auto, 70px, auto;
+        text-align: center;
+    }
+
+    .info_footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
