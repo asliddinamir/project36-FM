@@ -25,7 +25,8 @@ body {
 }
 
 .hidden {
-    display: none !important;
+    transform: translateX(-120%) !important;
+    position: absolute !important;
 }
 
 .container {
@@ -38,9 +39,11 @@ body {
 }
 
 .slide {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .3s linear;
 }
 
 .info {
@@ -201,6 +204,11 @@ footer a {
 
     button {
         padding: 1rem 1.3rem;
+    }
+
+    .hidden {
+        transform: translateX(-170%) !important;
+        position: absolute !important;
     }
 
 }
