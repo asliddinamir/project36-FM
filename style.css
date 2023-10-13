@@ -44,6 +44,7 @@ body {
 
 .info {
     width: 60%;
+    z-index: 2;
 }
 
 .info p {
@@ -69,5 +70,60 @@ body {
 
 .img {
     width: 50%;
+    z-index: 1;
     position: relative;
+    padding: .5rem 0 2rem 0;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btns {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+}
+
+.btns {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    gap: 0;
+}
+
+button {
+    color: var(--Grayish-Blue);
+    padding: 1.5rem 1.7rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+button img {
+    width: 15px;
+}
+
+button:nth-of-type(1) {
+    border: 1px solid var(--Grayish-Blue);
+    border-right: 0;
+    border-radius: 50% 0 0 50%;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:nth-of-type(2) {
+    border: 1px solid var(--Grayish-Blue);
+    border-left: 0;
+    border-radius: 0 50% 50% 0;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
