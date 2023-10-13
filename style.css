@@ -21,6 +21,7 @@ body {
     min-height: 100vh;
     width: 100vw;
     background: url('./images/pattern-curve.svg') left bottom -4rem / 60% no-repeat;
+    position: relative;
 }
 
 .hidden {
@@ -136,4 +137,17 @@ footer {
 
 footer a {
     color: red;
+}
+
+@media(max-width:1150px) {
+    .container {
+        background: url('./images/pattern-bg.svg') no-repeat center right/contain, url('./images/pattern-quotes.svg') 180px 50px no-repeat;
+        background-size: 500px auto, auto;
+        height: auto;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 10px;
+    }
 }
