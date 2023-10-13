@@ -2,7 +2,7 @@
 
 :root {
     --Dark-Blue: hsl(240, 38%, 20%);
-    --Grayish-Blue: hsl(240, 18%, 77%);
+    --Grayish-Blue: hsl(240, 18%, 53%);
 }
 
 * {
@@ -52,6 +52,19 @@ body {
     line-height: 1.4;
     font-weight: 300;
     margin-block: 40px;
+}
+
+.info_footer {
+    font-size: 19.2px;
+}
+
+.info_footer strong {
+    color: var(--Dark-Blue);
+}
+
+.info_footer span {
+    color: var(--Grayish-Blue);
+    font-weight: 500;
 }
 
 .img {
