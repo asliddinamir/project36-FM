@@ -225,3 +225,14 @@ footer a {
         flex-direction: column;
     }
 }
+
+@media(max-width:360px) {
+    .container {
+        background: url('./images/pattern-bg.svg') no-repeat top center/contain, url('./images/pattern-quotes.svg') 50% 50% no-repeat;
+        background-size: 300px auto, 70px, auto;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
